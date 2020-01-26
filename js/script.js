@@ -2,12 +2,22 @@
 $(window).scroll(function () {
     var wScroll = $(this).scrollTop();
 
-    $('h1').css({
-        'transform': 'translate(0px, ' + wScroll / 2 + '%)'
+
+    //jumbotron
+
+    $('.jumbotron h1').css({
+        'transform': 'translate(0px, ' + wScroll / 3 + '%)'
     });
 
-    $('.kotak').css({
-        'transform': 'translate(0px, ' + wScroll / 10 + '%)'
+    $('.jumbotron a').css({
+        'transform': 'translate(0px, ' + wScroll / 0.8 + '%)'
     });
+
+
+    // workingspace
+    if (wScroll > $('.workingspace').offset().top - 400) {
+        $('.workingspace .img-fluid').addClass('muncul');
+    };
+
 
 });

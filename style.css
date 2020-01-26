@@ -23,6 +23,7 @@
     height: 540px;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .jumbotron .container {
@@ -109,6 +110,18 @@
     font-weight: 200;
     margin: 30px 0;
 }
+
+.workingspace .img-fluid {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: .5s;
+}
+
+.workingspace .img-fluid.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 
 /* testimonial */
 .testimonial {
