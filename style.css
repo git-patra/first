@@ -18,6 +18,7 @@
 /* Jumbotron */
 .jumbotron {
     background-image: url('img/jumbotron-bg.jpg');
+    background-attachment: fixed;
     background-size: cover;
     height: 540px;
     text-align: center;
